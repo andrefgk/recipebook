@@ -31,7 +31,7 @@ Widget _plantsCard(BuildContext context) {
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(12),
                 child: Image.network(
-                  'https://motorio.vtexassets.com/arquivos/ids/24150/frontal-3106.jpg?v=638173826670800000',
+                  'https://metroio.vtexassets.com/arquivos/ids/240150/frontal-3106.jpg?v=638173826670800000 ',
                   fit: BoxFit.cover,
                 ), // Image.network
               ), // ClipRRect // Container
