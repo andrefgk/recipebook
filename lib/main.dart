@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:recipebook/screens/home_screen.dart';
+
 void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
@@ -9,8 +10,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: "Libro de las plantas",
-      home: PlantsBook());
+      title: 'Libro de las Plantas',
+      home: PlantsBook(),
+    );
   }
 }
 
@@ -24,35 +26,35 @@ class PlantsBook extends StatelessWidget {
       child: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.amber.shade300,
-          title: const Text(
-            "Medicina Natural",
-            style: TextStyle(color: Color.fromARGB(255, 8, 8, 8)),
+          title: Text(
+            'Medicina Natural',
+            style: TextStyle(color: const Color.fromARGB(255, 8, 8, 8)),
           ),
-          bottom: const TabBar(
+          bottom: TabBar(
             indicatorColor: Colors.blue,
             labelColor: Colors.white,
             unselectedLabelColor: Colors.white,
             tabs: [
               Tab(
                 icon: Icon(Icons.home),
-                text: "Home",
+                text: 'Home',
               ),
               Tab(
                 icon: Icon(Icons.question_mark),
-                text: "Question",
+                text: 'Question',
               ),
               Tab(
                 icon: Icon(Icons.people),
-                text: "People",
+                text: 'People',
               ),
               Tab(
                 icon: Icon(Icons.info),
-                text: "Info",
-              )
+                text: 'Info',
+              ),
             ],
           ),
         ),
-        body: const TabBarView(children: [HomeScreen()]),
+        body: TabBarView(children: [HomeScreen()]),
       ),
     );
   }
