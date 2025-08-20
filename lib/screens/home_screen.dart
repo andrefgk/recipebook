@@ -33,11 +33,11 @@ class HomeScreen extends StatelessWidget {
                     child: Image.network(
                       'https://metroio.vtexassets.com/arquivos/ids/240150/frontal-3106.jpg?v=638173826670800000',
                       fit: BoxFit.cover,
-                    ), // Image.network
-                  )), // ClipRRect // Container
+                    ), 
+                  )), 
               SizedBox(
                 width: 26,
-              ), // SizedBox
+              ), 
               Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -47,27 +47,27 @@ class HomeScreen extends StatelessWidget {
                         fontSize: 16,
                         fontFamily: 'Quicksand',
                         color: Colors.brown,
-                        fontWeight: FontWeight.w500)), // TextStyle // Text
+                        fontWeight: FontWeight.w500)), 
                   SizedBox(
                     height: 4,
-                  ), // SizedBox
+                  ), 
                   Container(
                     height: 1,
                     width: 95,
                     color: Colors.orange,
                   ), // Container
                   Text('Gabriela Zuñiga',
-                      style: TextStyle(fontSize: 16, fontFamily: 'Quicksand')), // Text
+                      style: TextStyle(fontSize: 16, fontFamily: 'Quicksand')), 
                   SizedBox(
                     height: 4,
                   ), 
-                ], // <Widget>[]
-              ) // Column
-            ], // <Widget>[]
-          ), // Row
-        ), // Card
-      ), // SizedBox
-    ); // Padding
+                ], 
+              ) 
+            ], 
+          ), 
+        ), 
+      ), 
+    ); 
   }
 }
 
